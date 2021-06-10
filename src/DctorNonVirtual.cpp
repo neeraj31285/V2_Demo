@@ -6,6 +6,7 @@ class Shape {
 
 		virtual bool draw() {
 			//init canvas
+			return true;
 		}
 
 		~Shape() {			//Compliant: has virtual function & non virtual destructor but most base class so compliant.
@@ -72,7 +73,8 @@ class Shape {
 	class Square : public Polygon {
 
 		int *sides;
-
+		int *circle;
+		
 	public:
 
 		bool draw() {
@@ -84,3 +86,7 @@ class Shape {
 			delete circle;
 		}
 	};
+	
+	int main(){
+		return 0;
+	}
