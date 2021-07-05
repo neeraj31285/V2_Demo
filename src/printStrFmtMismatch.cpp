@@ -7,8 +7,8 @@ void foo(const char* pc, int i, char c)
 {
 	char str[100];
 
-	sprintf_s(str, "%o", i, pc);	//Non-Compliant - format specifiers count does not matches the variable's count
-	sprintf_s(str, "%p", pc);		//Compliant - format specifiers count matches the variable's count
+	snprintf(str, "%o", i, pc);	//Non-Compliant - format specifiers count does not matches the variable's count
+	snprintf(str, "%p", pc);		//Compliant - format specifiers count matches the variable's count
 }
 
 void main()
