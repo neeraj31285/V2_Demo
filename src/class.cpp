@@ -7,7 +7,7 @@ void Alpha::operator=(Alpha& pOther)
 
 const Beta& Beta::operator=(const Beta& pOther)
 {
-	return *this;
+	return *(this);
 }
 
 void Theta::operator=(Theta& pOther)
