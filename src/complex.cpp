@@ -1,6 +1,10 @@
 
 #include "inc/complex.h"
 
+Complex::~Complex() {
+
+}
+
 Complex::Complex(double _real, double _imaginary) {
 	this->real = _real;
 	this->imaginary = _imaginary;
@@ -9,10 +13,6 @@ Complex::Complex(double _real, double _imaginary) {
 Complex::Complex(const Complex& rhs) {
 	this->real = rhs.real; 
 	this->imaginary = rhs.imaginary;
-}
-
-Complex::~Complex() {
-
 }
 
 Complex& Complex::operator=(const Complex& rhs) {
