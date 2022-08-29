@@ -13,4 +13,12 @@ class Beta {
 class Theta {
 
 	void operator=(Theta& pOther);
+	public:
+	int num;
+	int mem;
+	// int next;
+	
+	int getNum(){
+		return 0;
+	}
 };
