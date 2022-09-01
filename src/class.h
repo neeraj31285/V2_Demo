@@ -18,7 +18,5 @@ class Theta {
 	int mem;
 	// int next;
 	
-	int getNum(){
-		return 0;
-	}
+	int getNum();
 };
