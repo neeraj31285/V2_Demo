@@ -17,3 +17,7 @@ void Theta::operator=(Theta& pOther)
 		sum += i;
 	}
 }
+
+int Theta::getNum(){
+	return 0;
+}
